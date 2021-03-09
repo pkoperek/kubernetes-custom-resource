@@ -1,0 +1,11 @@
+apiVersion: "stable.imaginedata.co/v1"
+kind: Database
+metadata:
+  name: my-first-crd-database
+  namespace: default
+spec:
+  name: name-of-database
+  port: 5432
+  storage-size: 50G
+  image: super-great-docker-image
+  replicas: 3
